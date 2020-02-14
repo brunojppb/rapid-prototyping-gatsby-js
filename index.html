@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Rapid Prototyping with GatsbyJS</title>
+
+		<meta name="description" content="Do you want to learn how to rapid prototype a website with the most modern Javascript frameworks out there? Check this out.">
+		<meta name="author" content="Bruno Paulino">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bpaulino.com/rapid-prototyping-gastby-js" />
+    <meta property="og:title" content="Rapid Prototyping with GatsbyJS" />
+    <meta property="og:description" content="Do you want to learn how to rapid prototype a website with the most modern Javascript frameworks out there? Check this out." />
+    <meta property="og:image" content="https://bpaulino.com/rapid-prototyping-gastby-js/img/graph_image.jpg" />
+
+    <!-- twitter card tags additive with the og: tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" value="bpaulino.com" />
+    <meta name="twitter:title" value="Rapid Prototyping with GatsbyJS" />
+    <meta name="twitter:description" value="Do you want to learn how to rapid prototype a website with the most modern Javascript frameworks out there? Check this out." />
+    <meta name="twitter:image" content="https://bpaulino.com/rapid-prototyping-gastby-js/img/graph_image.jpg" />
+    <meta name="twitter:url" value="https://bpaulino.com/" />
+    <meta name="twitter:label1" value="Created by" />
+    <meta name="twitter:data1" value="Bruno Paulino" />
+    <meta name="twitter:label2" value="Twitter" />
+    <meta name="twitter:data2" value="@bpaulino0" />
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Rapid Prototyping with GatsbyJS</h3>
+					<p>
+						<small>by <a href="https://bpaulino.com">Bruno Paulino</a></small>
+          </p>
+          <aside class="notes">
+            Who here have used Gatsby?
+            How about in production?
+          </aside>
+				</section>
+
+				<section>
+					<h4>What if you want to put together a website with the most modern web tech out there?</h4>
+					<p>
+						<small class="fragment">even worst, what if you are a beginner?</small>
+          </p>
+          <p class="fragment">Getting this whole thing right is hard...</p>
+          <p class="fragment">and can get expensive.</p>
+          <aside class="notes">
+            You need to know Webpack, nginx, CDN, backend, databases, docker and this list goes on and on.
+          </aside>
+				</section>
+
+				<section>
+					<h4>Static Site Generators come to the rescue</h4>
+          <img class="fragment" style="width: 300px; display: block; margin: 16px auto;" src="./img/jekyll.png">
+          <img class="fragment" style="width: 300px; display: block; margin: 16px auto;" src="./img/hugo.png">
+          <img class="fragment" style="width: 300px; display: block; margin: 16px auto;" src="./img/nuxt.png">
+          <img class="fragment" style="width: 300px; display: block; margin: 16px auto;" src="./img/gastby.png">
+          <aside class="notes">
+            Ok, I don't want to become a DevOps Engineer. I just want a website.<br/>
+            You basically have those frameworks that can generate static pages for you, without going throught the hustle of caring about infrastructure and so on.
+          </aside>
+				</section>
+
+				<section>
+          <h2>What is Gatsby</h2>
+          <ol>
+            <li class="fragment">Static site generator based on <strong>React</strong>.</li>
+            <li class="fragment">You write your React components just as usual and Gatsby generates static pages out of it. You still get all the benefits from React like state management and hooks.</li>
+            <li class="fragment">All the benefits from static sites/server-side rendering like SEO and speed.</li>
+          </ol>
+				</section>
+
+				<section>
+					<h4>Our Little Experiment</h4>
+					<img src="./img/woom-blog-layout.png" style="max-width: 650px; background: unset; border: unset;"/>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
