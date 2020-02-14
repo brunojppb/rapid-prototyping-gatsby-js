@@ -22,7 +22,7 @@
     <meta property="og:image" content="https://bpaulino.com/rapid-prototyping-gastby-js/img/graph_image.jpg" />
 
     <!-- twitter card tags additive with the og: tags -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="product">
     <meta name="twitter:domain" value="bpaulino.com" />
     <meta name="twitter:title" value="Rapid Prototyping with GatsbyJS" />
     <meta name="twitter:description" value="Do you want to learn how to rapid prototype a website with the most modern Javascript frameworks out there? Check this out." />
@@ -79,7 +79,7 @@
           <p class="fragment">Getting this whole thing right is hard...</p>
           <p class="fragment">and can get expensive.</p>
           <aside class="notes">
-            You need to know Webpack, nginx, CDN, backend, databases, docker and this list goes on and on.
+            You need to know Webpack, babel, nginx, backend, databases, docker and this list goes on and on.
           </aside>
 				</section>
 
@@ -99,15 +99,79 @@
           <h2>What is Gatsby</h2>
           <ol>
             <li class="fragment">Static site generator based on <strong>React</strong>.</li>
-            <li class="fragment">You write your React components just as usual and Gatsby generates static pages out of it. You still get all the benefits from React like state management and hooks.</li>
-            <li class="fragment">All the benefits from static sites/server-side rendering like SEO and speed.</li>
+            <li class="fragment">Just React components.</li>
+            <li class="fragment">So, hooks are still there.</li>
+            <li class="fragment">All the benefits of server-side rendering like SEO.</li>
+            <li class="fragment">Hability to plug external datasources like a headless CMS.</li>
           </ol>
 				</section>
 
 				<section>
 					<h4>Our Little Experiment</h4>
-					<img src="./img/woom-blog-layout.png" style="max-width: 650px; background: unset; border: unset;"/>
-				</section>
+          <img src="./img/woom-blog-layout.png" style="max-width: 650px; background: unset; border: unset;"/>
+          <aside class="notes">
+            At woom we had this interesting project:
+            <ul>
+              <li>Migrate our blog frontend to a new platform (Hubspot)</li>
+              <li>But we still want to be flexible enough to be able to hook up different data providers: Headless CMS</li>
+            </ul>
+          </aside>
+        </section>
+        
+        <section>
+          <h2>Why we decided on Gatsby</h2>
+          <aside class="notes">
+            Now lets take a look at the main reasons we decided for Gatsby.
+          </aside>
+        </section>
+        
+        <section>
+          <h2>Batteries Included</h2>
+          <ol>
+            <li class="fragment">dev and production configuration out-of-the-box</li>
+            <li class="fragment">Convention over configuration.</li>
+          </ol>
+
+          <aside class="notes">
+            <ul>
+              <li>No need to figure our how Webpack or Babel works.</li>
+              <li>if I follow the convention, I don't have to figure out config. Good example is routes management</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>GraphQL</h2>
+          <aside class="notes">
+            GraphQL integration for static assets like markdown files, but also for remote data sources like a headless CMS.<br/>
+            GraphQL Explorer to view the available data
+          </aside>
+        </section>
+
+        <section>
+          <h2>Rich and flexible plugin ecosystem</h2>
+          <aside class="notes">
+            Most important plugins provided by Gatsby itself, but also flexible enough to enable us to create custom plugins.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Showcase</h2>
+          <p>
+            <a href="http://design.pages.gitlab.woombikes.com/hubspot-template/">Let's take a look at our end result (click here)</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>What is next?</h2>
+          <p>Evaluating our shop frontend migration to static pages using Gastby</p>
+        </section>
+
+        <section>
+          <h2>Thank you!</h2>
+          <p>Let's stay in touch.</p>
+          <p>You can find me <a href="https://twitter.com/bpaulino0">@bpaulino0</a> on Twitter.</p>
+        </section>
 
 			</div>
 
