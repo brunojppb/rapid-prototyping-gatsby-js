@@ -1,3 +1,3 @@
-# Rapid Prototyping with GastbyJS
+# Rapid Prototyping with GatsbyJS
 
-[![rapid prototyping with GastbyJS](./img/graph_image.jpg)](https://bpaulino.com/rapid-prototyping-gastby-js)
+[![rapid prototyping with Gatsby](./img/rapid-prototyping-with-gatsby.jpg)](https://bpaulino.com/rapid-prototyping-gatsby-js)
